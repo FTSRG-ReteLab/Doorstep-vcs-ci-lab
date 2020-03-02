@@ -2,6 +2,10 @@
 
 This is a sample application for the verification laboratory.
 
+## Motivation
+
+Practicing **Git** _commands_ and working with the [GitHub](https://github.com/) platform.
+
 ## Getting started
 
 * The application is implemented in Java.

@@ -1,7 +1,16 @@
 subprojects {
   apply plugin: 'java'
 
+  
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+
   repositories {
     jcenter()
   }
+
+  dependencies {
+  implementation("com.google.guava:guava:28.2-jre")
 }
+}
+

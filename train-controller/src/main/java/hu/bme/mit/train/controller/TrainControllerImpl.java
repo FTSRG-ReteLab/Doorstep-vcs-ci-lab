@@ -9,6 +9,20 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 	private Thread thread;
 
+	public TrainControllerImpl() {
+		thread = new Thread() {
+			public void run() {
+				thread.run();
+				try {
+					followSpeed();
+					thread.sleep(1500);
+				} catch(InterruptedException ex) {
+					ex.printStackTrace()	
+				}
+			}
+		};		
+	}
+
 	@Override
 	public void followSpeed() {
 		if (referenceSpeed < 0) {

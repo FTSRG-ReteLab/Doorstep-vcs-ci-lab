@@ -16,8 +16,7 @@ public class TrainControllerImpl implements TrainController {
 				try {
 					followSpeed();
 					thread.sleep(1200);
-				} catch(InterruptedException ex) {					
-				}				
+				} catch(InterruptedException ex) {}				
 			}
 		};		
 	}
@@ -58,7 +57,7 @@ public class TrainControllerImpl implements TrainController {
 
 	@Override
 	public void setJoystickPosition(int joystickPosition) {
-		this.step = joystickPosition;
+		this.step = joystickPosition;		
 	}
 
 }
